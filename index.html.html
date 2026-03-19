@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="De Traducir a Fluir — El programa 1:1 para profesionales latinos que quieren hablar inglés con fluidez natural en su trabajo en 4 meses. Coach Miyerick Delgado.">
+<meta name="keywords" content="inglés para profesionales latinos, hablar inglés con confianza, coach inglés empresarial, De Traducir a Fluir, Miyerick Delgado">
+<meta property="og:title" content="De Traducir a Fluir — Miyerick Delgado">
+<meta property="og:description" content="En 4 meses, de traducir mentalmente a hablar inglés con fluidez natural en tu trabajo.">
+<title>De Traducir a Fluir — Miyerick Delgado | Coach de Inglés Empresarial</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B1F3A;
+    --navy-mid: #122848;
+    --navy-light: #1A3A5C;
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --gold-pale: #FFF8E7;
+    --blue: #1E5F9E;
+    --blue-light: #2B7FD4;
+    --white: #FFFFFF;
+    --off-white: #F8F6F0;
+    --gray: #6B7280;
+    --gray-light: #F3F4F6;
+    --dark: #1A1A2E;
+    --green: #1A7A4A;
+    --green-bg: #E8F5EE;
+    --border: rgba(201,168,76,0.2);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--off-white);
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(11,31,58,0.97);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    color: var(--white);
+    letter-spacing: 2px;
+  }
+
+  .nav-brand span { color: var(--gold); }
+
+  .nav-cta {
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .nav-cta:hover {
+    background: var(--gold-light);
+    transform: translateY(-1px);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--navy);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 24px 80px;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 600px 400px at 80% 20%, rgba(43,127,212,0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 400px 400px at 10% 80%, rgba(201,168,76,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(201,168,76,0.12);
+    border: 1px solid rgba(201,168,76,0.35);
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 2px;
+    margin-bottom: 28px;
+  }
+
+  .hero-tag::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(52px, 7vw, 88px);
+    line-height: 0.9;
+    color: var(--white);
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 .gold { color: var(--gold); display: block; }
+
+  .hero-divider {
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    margin: 24px 0;
+  }
+
+  .hero-sub {
+    font-size: clamp(16px, 2vw, 20px);
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 520px;
+  }
+
+  .hero-sub strong { color: var(--white); }
+
+  .hero-btns {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 18px 36px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(201,168,76,0.35);
+  }
+
+  .btn-secondary {
+    border: 1.5px solid rgba(255,255,255,0.3);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 18px 36px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* Hero right — stats */
+  .hero-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stat-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-left: 3px solid var(--gold);
+    padding: 24px 28px;
+    border-radius: 4px;
+  }
+
+  .stat-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: var(--gold);
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.5;
+    margin-top: 4px;
+  }
+
+  /* ── SECTION BASE ── */
+  section {
+    padding: 100px 24px;
+  }
+
+  .section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-tag::before {
+    content: '';
+    width: 24px; height: 2px;
+    background: var(--gold);
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(36px, 5vw, 60px);
+    color: var(--navy);
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .section-title.white { color: var(--white); }
+  .section-title .gold { color: var(--gold); }
+
+  .section-sub {
+    font-size: 18px;
+    color: var(--gray);
+    line-height: 1.7;
+    max-width: 620px;
+    margin-bottom: 60px;
+  }
+
+  /* ── PROBLEM SECTION ── */
+  .problem-section {
+    background: var(--off-white);
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .problem-card {
+    background: var(--white);
+    border: 1px solid #E5E7EB;
+    border-top: 3px solid #DC2626;
+    padding: 28px 24px;
+    border-radius: 4px;
+  }
+
+  .problem-emoji {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+
+  .problem-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .problem-desc {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.7;
+  }
+
+  .problem-reframe {
+    background: var(--navy);
+    border: 2px solid var(--gold);
+    border-radius: 6px;
+    padding: 40px 48px;
+    text-align: center;
+  }
+
+  .problem-reframe p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(18px, 2.5vw, 26px);
+    color: var(--white);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .problem-reframe strong {
+    font-style: normal;
+    color: var(--gold);
+  }
+
+  .problem-reframe .author {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+  }
+
+  /* ── STORY SECTION ── */
+  .story-section {
+    background: var(--navy);
+  }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .story-text p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .story-text p strong { color: var(--white); }
+
+  .story-quote {
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid var(--gold);
+    padding: 24px 28px;
+    border-radius: 0 4px 4px 0;
+    margin: 32px 0;
+  }
+
+  .story-quote p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--white);
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  .story-quote .quote-author {
+    font-size: 13px;
+    color: var(--gold);
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  .story-credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .credential-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(201,168,76,0.2);
+    padding: 20px 24px;
+    border-radius: 4px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .credential-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+
+  .credential-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 4px;
+  }
+
+  .credential-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+  }
+
+  /* ── METHOD SECTION ── */
+  .method-section {
+    background: var(--off-white);
+  }
+
+  .method-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .method-card {
+    background: var(--white);
+    border: 1px solid #E5E7EB;
+    padding: 32px 28px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .method-card.active {
+    border-color: var(--gold);
+    background: var(--gold-pale);
+  }
+
+  .method-card.blocked {
+    opacity: 0.7;
+  }
+
+  .method-badge {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .method-card.active .method-badge {
+    background: var(--gold);
+    color: var(--navy);
+  }
+
+  .method-card.blocked .method-badge {
+    background: #FEE2E2;
+    color: #991B1B;
+  }
+
+  .method-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .method-card.active .method-title { color: var(--navy); }
+  .method-card.blocked .method-title { color: #6B7280; }
+
+  .method-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--gray);
+  }
+
+  .method-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .step-card {
+    text-align: center;
+    padding: 32px 20px;
+    background: var(--navy);
+    border-radius: 4px;
+    border: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .step-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .step-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .step-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+  }
+
+  /* ── PROGRAM SECTION ── */
+  .program-section {
+    background: var(--navy);
+  }
+
+  .phases-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .phase-card {
+    border-radius: 6px;
+    padding: 32px 28px;
+    border: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .phase-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; height: 4px;
+  }
+
+  .phase-1 { background: rgba(43,127,212,0.1); }
+  .phase-1::before { background: #2B7FD4; }
+
+  .phase-2 { background: rgba(26,122,74,0.1); }
+  .phase-2::before { background: #1A7A4A; }
+
+  .phase-3 { background: rgba(201,168,76,0.1); }
+  .phase-3::before { background: var(--gold); }
+
+  .phase-4 { background: rgba(108,52,131,0.1); }
+  .phase-4::before { background: #9333EA; }
+
+  .phase-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .phase-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    line-height: 1;
+    opacity: 0.7;
+  }
+
+  .phase-1 .phase-num { color: #2B7FD4; }
+  .phase-2 .phase-num { color: #1A7A4A; }
+  .phase-3 .phase-num { color: var(--gold); }
+  .phase-4 .phase-num { color: #9333EA; }
+
+  .phase-weeks {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .phase-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .phase-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+  }
+
+  .phase-result {
+    background: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+
+  .phase-result-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 6px;
+  }
+
+  .phase-result-text {
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+  }
+
+  .phase-includes {
+    list-style: none;
+  }
+
+  .phase-includes li {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    padding: 4px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .phase-includes li::before {
+    content: '→';
+    color: var(--gold);
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+
+  .program-summary {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 6px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+  }
+
+  .summary-item-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 44px;
+    color: var(--gold);
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .summary-item-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+  }
+
+  /* ── RESULTS SECTION ── */
+  .results-section {
+    background: var(--off-white);
+  }
+
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .result-card {
+    background: var(--white);
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 28px 24px;
+    text-align: center;
+  }
+
+  .result-icon {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .result-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .result-desc {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.7;
+  }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    background: var(--navy);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 6px;
+    padding: 32px 28px;
+    position: relative;
+  }
+
+  .testimonial-quote-mark {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    color: var(--gold);
+    line-height: 0.5;
+    margin-bottom: 20px;
+    opacity: 0.5;
+  }
+
+  .testimonial-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--white);
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .author-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    color: var(--navy);
+    flex-shrink: 0;
+  }
+
+  .author-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gold-light);
+  }
+
+  .author-role {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* ── FOR WHO ── */
+  .forwho-section {
+    background: var(--navy-mid);
+  }
+
+  .forwho-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .forwho-col h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+  }
+
+  .forwho-col.yes h3 { color: var(--gold); }
+  .forwho-col.no h3 { color: rgba(255,255,255,0.4); }
+
+  .forwho-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .forwho-item:last-child { border-bottom: none; }
+
+  .forwho-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .forwho-text {
+    font-size: 15px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.6;
+  }
+
+  /* ── PRICE SECTION ── */
+  .price-section {
+    background: var(--off-white);
+  }
+
+  .price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto 60px;
+  }
+
+  .price-card {
+    background: var(--white);
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 40px 32px;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  .price-card.featured {
+    border-color: var(--gold);
+    background: var(--navy);
+    transform: scale(1.02);
+    box-shadow: 0 20px 60px rgba(201,168,76,0.2);
+  }
+
+  .price-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+  }
+
+  .price-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .price-card.featured .price-label { color: rgba(255,255,255,0.6); }
+  .price-card:not(.featured) .price-label { color: var(--gray); }
+
+  .price-amount {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .price-card.featured .price-amount { color: var(--gold); }
+  .price-card:not(.featured) .price-amount { color: var(--navy); }
+
+  .price-period {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .price-card.featured .price-period { color: rgba(255,255,255,0.5); }
+  .price-card:not(.featured) .price-period { color: var(--gray); }
+
+  .price-note {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+
+  .price-card.featured .price-note { color: rgba(255,255,255,0.65); }
+  .price-card:not(.featured) .price-note { color: var(--gray); }
+
+  .price-btn {
+    display: block;
+    padding: 16px 24px;
+    border-radius: 3px;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .price-card.featured .price-btn {
+    background: var(--gold);
+    color: var(--navy);
+  }
+
+  .price-card:not(.featured) .price-btn {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .price-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+
+  .price-guarantee {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 32px;
+    background: var(--green-bg);
+    border: 1px solid var(--green);
+    border-radius: 6px;
+  }
+
+  .price-guarantee p {
+    font-size: 15px;
+    color: #065F46;
+    line-height: 1.7;
+  }
+
+  .price-guarantee strong { color: #064E3B; }
+
+  /* ── FAQ ── */
+  .faq-section {
+    background: var(--navy);
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .faq-item {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px;
+    padding: 28px 24px;
+  }
+
+  .faq-q {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  .faq-a {
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+  }
+
+  /* ── FINAL CTA ── */
+  .cta-section {
+    background: var(--navy);
+    border-top: 2px solid var(--gold);
+    padding: 100px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 800px 400px at 50% 50%, rgba(201,168,76,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-section .section-tag {
+    justify-content: center;
+  }
+
+  .cta-section .section-tag::before { display: none; }
+
+  .cta-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(40px, 6vw, 72px);
+    color: var(--white);
+    letter-spacing: 3px;
+    line-height: 0.95;
+    margin-bottom: 16px;
+  }
+
+  .cta-title .gold { color: var(--gold); display: block; }
+
+  .cta-sub {
+    font-size: 18px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    max-width: 560px;
+    margin: 0 auto 48px;
+  }
+
+  .cta-btn-large {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 22px 60px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.25s;
+    margin-bottom: 20px;
+  }
+
+  .cta-btn-large:hover {
+    background: var(--gold-light);
+    transform: translateY(-3px);
+    box-shadow: 0 16px 48px rgba(201,168,76,0.4);
+  }
+
+  .cta-note {
+    font-size: 13px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 1px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #050D1A;
+    padding: 40px 24px;
+    text-align: center;
+    border-top: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .footer-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    color: var(--white);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .footer-brand span { color: var(--gold); }
+
+  .footer-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--gold); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-stats { display: none; }
+    .story-grid { grid-template-columns: 1fr; }
+    .method-grid { grid-template-columns: 1fr; }
+    .method-steps { grid-template-columns: 1fr; }
+    .phases-grid { grid-template-columns: 1fr; }
+    .program-summary { grid-template-columns: 1fr 1fr; }
+    .results-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .forwho-grid { grid-template-columns: 1fr; }
+    .price-grid { grid-template-columns: 1fr; }
+    .price-card.featured { transform: none; }
+    .faq-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 480px) {
+    section { padding: 70px 20px; }
+    .program-summary { grid-template-columns: 1fr 1fr; gap: 20px; }
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-up {
+    animation: fadeUp 0.6s ease both;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">De Traducir <span>a Fluir</span></div>
+  <a href="https://forms.gle/FP8hs49qxK6xRaWd8" target="_blank" class="nav-cta">Aplicar al programa →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-content fade-up">
+      <div class="hero-tag">Programa 1:1 · 4 Meses · Miyerick Delgado</div>
+      <h1>
+        De Traducir
+        <span class="gold">a Fluir™</span>
+      </h1>
+      <div class="hero-divider"></div>
+      <p class="hero-sub">
+        El programa 1:1 para profesionales latinos que ya tienen el inglés
+        pero se <strong>congelan cuando más importa.</strong>
+        En 4 meses, de traducir mentalmente a hablar con fluidez natural en tu trabajo.
+      </p>
+      <div class="hero-btns">
+        <a href="https://forms.gle/FP8hs49qxK6xRaWd8" target="_blank" class="btn-primary">Completar formulario de aplicación →</a>
+        <a href="#programa" class="btn-secondary">Ver el programa ↓</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-number">+20</div>
+        <div class="stat-label">Años enseñando inglés a profesionales latinos</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Meses para pasar de traducir a hablar con fluidez</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">1:1</div>
+        <div class="stat-label">Sesiones personalizadas a tu trabajo e industria</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem-section" id="problema">
+  <div class="section-inner">
+    <div class="section-tag">El problema real</div>
+    <h2 class="section-title">¿Te suena <span class="gold">familiar?</span></h2>
+    <p class="section-sub">Si tienes inglés pero esto te pasa, estás en el lugar correcto.</p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-emoji">🔇</div>
+        <div class="problem-title">Silencio cuando más importa</div>
+        <div class="problem-desc">En reuniones internacionales tienes ideas valiosas pero te quedas callado/a. Asientes. Dices "yes, yes" aunque no hayas entendido todo.</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-emoji">🔄</div>
+        <div class="problem-title">Traduces antes de hablar</div>
+        <div class="problem-desc">Cada frase pasa primero por el español. Esa fracción de segundo lo hace todo más lento, más torpe y menos natural de lo que realmente eres.</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-emoji">🧊</div>
+        <div class="problem-title">El bloqueo bajo presión</div>
+        <div class="problem-desc">En una llamada importante, con tu CEO, en una entrevista — justo cuando más necesitas hablar bien, algo se apaga y las palabras desaparecen.</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-emoji">📚</div>
+        <div class="problem-title">Años estudiando sin resultado real</div>
+        <div class="problem-desc">Cursos, apps, academias, YouTube. Tienes el vocabulario, entiendes todo — pero a la hora de hablar el resultado no corresponde con lo que sabes.</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-emoji">💼</div>
+        <div class="problem-title">Un techo invisible en tu carrera</div>
+        <div class="problem-desc">Sabes que hay oportunidades que no estás tomando. Ascensos que se van a quienes suenan más seguros. Clientes que no cierras por cómo comunicas.</div>
+      </div>
+      <div class="problem-card">
+        <div class="problem-emoji">😓</div>
+        <div class="problem-title">Inseguridad que no desaparece</div>
+        <div class="problem-desc">Llevas años diciéndote que mejorarás el inglés "cuando tengas más tiempo." Pero el problema no es el tiempo. Es que nadie te ayudó a resolverlo bien.</div>
+      </div>
+    </div>
+
+    <div class="problem-reframe">
+      <p>"He trabajado con Marisela, Gustavo, Bryan y decenas de profesionales como ellos. Llegaron con excelente vocabulario, buena comprensión y años de estudio detrás.<br>Pero no podían hablar. No era falta de inglés. Era falta de <strong>confianza en el inglés que ya tenían.</strong>"</p>
+      <p class="author">— MIYERICK DELGADO · +20 AÑOS DE EXPERIENCIA</p>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story-section" id="miyerick">
+  <div class="section-inner">
+    <div class="story-grid">
+      <div class="story-text">
+        <div class="section-tag">Quién soy</div>
+        <h2 class="section-title white">Soy Miyerick <span class="gold">Delgado</span></h2>
+        <p>Llevo <strong>más de 20 años</strong> enseñando inglés. En todo ese tiempo he visto el mismo patrón una y otra vez: profesionales con excelente base, vocabulario sólido y años de estudio que simplemente <strong>no pueden hablar.</strong></p>
+        <p>Dudaban. Se bloqueaban. Traducían cada frase antes de decirla. Y esa fracción de segundo de duda los dejaba en silencio justo cuando más necesitaban hablar.</p>
+        <p>Con el tiempo entendí algo que cambió completamente cómo trabajo: <strong>el problema no era su inglés. Era su confianza en el inglés que ya tenían.</strong></p>
+        <p>Cuando trabajamos eso — las inseguridades, los bloqueos, el miedo a no sonar perfecto — algo cambia. No de un día para otro. Pero cambia de forma real y duradera.</p>
+
+        <div class="story-quote">
+          <p>"Parece que estuvieras al lado mío… las preguntas que me estás dando son todas las que yo necesito usar."</p>
+          <p class="quote-author">— MARISELA · CLIENTE DEL PROGRAMA</p>
+        </div>
+      </div>
+
+      <div class="story-credentials">
+        <div class="credential-item">
+          <div class="credential-icon">🏆</div>
+          <div>
+            <div class="credential-title">Más de 20 años de experiencia</div>
+            <div class="credential-desc">Enseñando inglés a profesionales latinos en distintos países, industrias y niveles.</div>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon">🎯</div>
+          <div>
+            <div class="credential-title">Especialización en el bloqueo profesional</div>
+            <div class="credential-desc">No enseño inglés general. Trabajo el modo en que tu cerebro procesa el idioma bajo presión real.</div>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon">🤝</div>
+          <div>
+            <div class="credential-title">Acompañamiento 100% personalizado</div>
+            <div class="credential-desc">Cada sesión está diseñada para tu trabajo, tu industria y tus situaciones reales — no para un curso genérico.</div>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon">📊</div>
+          <div>
+            <div class="credential-title">Resultados medibles en cada fase</div>
+            <div class="credential-desc">Al final de cada mes sabes exactamente qué cambió. No promesas — evidencia grabada de tu progreso.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="method-section" id="metodo">
+  <div class="section-inner">
+    <div class="section-tag">El método</div>
+    <h2 class="section-title">No enseño inglés. <span class="gold">Desbloqueo</span> el que ya tienes.</h2>
+    <p class="section-sub">Tu cerebro tiene dos modos para hablar inglés. Solo has entrenado el equivocado.</p>
+
+    <div class="method-grid">
+      <div class="method-card blocked">
+        <div class="method-badge">El que has entrenado hasta ahora</div>
+        <div class="method-title">Modo Estudio ❌</div>
+        <div class="method-desc">Piensas → Traduces → Revisas → Corriges. Funciona en clase y en entornos sin presión. Se congela en reuniones reales, llamadas importantes y cualquier situación de alto estrés.</div>
+      </div>
+      <div class="method-card active">
+        <div class="method-badge">Lo que vamos a activar juntos</div>
+        <div class="method-title">Modo Automático ✅</div>
+        <div class="method-desc">Simplemente hablas — sin traducción, sin filtro, con confianza real. Igual que en español. Disponible bajo presión, en cualquier situación, cuando más lo necesitas.</div>
+      </div>
+    </div>
+
+    <div class="method-steps">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-title">Pensar en imágenes</div>
+        <div class="step-desc">Asocias directamente la idea con la palabra en inglés — sin el paso intermedio del español. Se entrena, no se aprende.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-title">Presión controlada</div>
+        <div class="step-desc">Practicamos simulando el estrés real de tus reuniones. No el espejo — situaciones reales de tu trabajo.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-title">Confianza antes que vocabulario</div>
+        <div class="step-desc">El bloqueo es emocional antes de ser lingüístico. Trabajamos desde adentro — no con más gramática.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section class="program-section" id="programa">
+  <div class="section-inner">
+    <div class="section-tag">El programa</div>
+    <h2 class="section-title white">De Traducir a <span class="gold">Fluir™</span></h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.6)">16 semanas · 32 sesiones en vivo · 100% personalizado para tu trabajo</p>
+
+    <div class="phases-grid">
+      <div class="phase-card phase-1">
+        <div class="phase-header">
+          <div class="phase-num">01</div>
+          <div class="phase-weeks">SEMANAS 1–4</div>
+        </div>
+        <div class="phase-title">Diagnóstico y Desbloqueo</div>
+        <div class="phase-subtitle">"Entendemos cómo funciona tu inglés específico"</div>
+        <div class="phase-result">
+          <div class="phase-result-label">✅ Resultado al finalizar</div>
+          <div class="phase-result-text">Mantienes una conversación básica de trabajo en inglés durante 3 minutos sin pausas de traducción.</div>
+        </div>
+        <ul class="phase-includes">
+          <li>8 sesiones 1:1 por Zoom</li>
+          <li>Plan de práctica personalizado</li>
+          <li>Audios de referencia grabados para ti</li>
+        </ul>
+      </div>
+
+      <div class="phase-card phase-2">
+        <div class="phase-header">
+          <div class="phase-num">02</div>
+          <div class="phase-weeks">SEMANAS 5–8</div>
+        </div>
+        <div class="phase-title">Construcción de Fluidez</div>
+        <div class="phase-subtitle">"Tu inglés empieza a salir sin pensar tanto"</div>
+        <div class="phase-result">
+          <div class="phase-result-label">✅ Resultado al finalizar</div>
+          <div class="phase-result-text">Participas activamente en reuniones — opinas, preguntas, interrumpes — sin preparar cada frase de antemano.</div>
+        </div>
+        <ul class="phase-includes">
+          <li>8 sesiones 1:1 por Zoom</li>
+          <li>Banco de frases de tu industria</li>
+          <li>Simulaciones grabadas de tu progreso</li>
+        </ul>
+      </div>
+
+      <div class="phase-card phase-3">
+        <div class="phase-header">
+          <div class="phase-num">03</div>
+          <div class="phase-weeks">SEMANAS 9–12</div>
+        </div>
+        <div class="phase-title">Confianza Bajo Presión</div>
+        <div class="phase-subtitle">"Hablas bien incluso cuando estás nervioso/a"</div>
+        <div class="phase-result">
+          <div class="phase-result-label">✅ Resultado al finalizar</div>
+          <div class="phase-result-text">Manejas situaciones de alto estrés — preguntas inesperadas, objeciones, presentaciones — sin congelarte.</div>
+        </div>
+        <ul class="phase-includes">
+          <li>8 sesiones 1:1 por Zoom</li>
+          <li>Simulaciones con retroalimentación escrita</li>
+          <li>Ejercicios de pronunciación y presencia vocal</li>
+        </ul>
+      </div>
+
+      <div class="phase-card phase-4">
+        <div class="phase-header">
+          <div class="phase-num">04</div>
+          <div class="phase-weeks">SEMANAS 13–16</div>
+        </div>
+        <div class="phase-title">Automatización y Cierre</div>
+        <div class="phase-subtitle">"Ya no piensas en inglés — simplemente hablas"</div>
+        <div class="phase-result">
+          <div class="phase-result-label">✅ Resultado al finalizar</div>
+          <div class="phase-result-text">Conduces reuniones, cierras ventas o das presentaciones completas en inglés con fluidez natural.</div>
+        </div>
+        <ul class="phase-includes">
+          <li>8 sesiones 1:1 por Zoom</li>
+          <li>Grabación comparativa Día 1 vs Día 112</li>
+          <li>Plan de práctica autónoma para los próximos 6 meses</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="program-summary">
+      <div>
+        <div class="summary-item-num">32</div>
+        <div class="summary-item-label">Sesiones en vivo 1:1 por Zoom</div>
+      </div>
+      <div>
+        <div class="summary-item-num">16</div>
+        <div class="summary-item-label">Semanas de acompañamiento real</div>
+      </div>
+      <div>
+        <div class="summary-item-num">4</div>
+        <div class="summary-item-label">Fases con resultados medibles</div>
+      </div>
+      <div>
+        <div class="summary-item-num">100%</div>
+        <div class="summary-item-label">Personalizado a tu trabajo e industria</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results-section" id="resultados">
+  <div class="section-inner">
+    <div class="section-tag">Resultados reales</div>
+    <h2 class="section-title">Lo que logran mis <span class="gold">clientes</span></h2>
+    <p class="section-sub">No prometo perfección. Prometo fluidez real — que es exactamente lo que necesitas para avanzar.</p>
+
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="result-icon">🎙️</div>
+        <div class="result-title">Hablan en reuniones sin congelarse</div>
+        <div class="result-desc">Participan, opinan e interrumpen con educación. Ya no se quedan en silencio con ideas valiosas que nadie escucha.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">🧠</div>
+        <div class="result-title">Dejan de traducir mentalmente</div>
+        <div class="result-desc">El inglés fluye directamente. Sin el paso intermedio del español que los hacía lentos e inseguros.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">💪</div>
+        <div class="result-title">Pierden el miedo a cometer errores</div>
+        <div class="result-desc">Se comunican con confianza aunque no sea perfecto. Porque la meta nunca fue sonar como nativos — fue comunicarse.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">📈</div>
+        <div class="result-title">Consiguen ascensos y nuevas oportunidades</div>
+        <div class="result-desc">El inglés que antes era su techo se convierte en su diferenciador. Aplican a roles que antes evitaban.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">🤝</div>
+        <div class="result-title">Cierran conversaciones y ventas en inglés</div>
+        <div class="result-desc">Se comunican con clientes internacionales sin perder credibilidad ni presencia profesional.</div>
+      </div>
+      <div class="result-card">
+        <div class="result-icon">🌟</div>
+        <div class="result-title">Suenan como quienes realmente son</div>
+        <div class="result-desc">La brecha entre la persona que son en español y la que proyectaban en inglés finalmente desaparece.</div>
+      </div>
+    </div>
+
+    <div class="testimonials-grid" style="margin-top:40px">
+      <div class="testimonial-card">
+        <div class="testimonial-quote-mark">"</div>
+        <div class="testimonial-text">Parece que estuvieras al lado mío… las preguntas que me estás dando son todas las que yo necesito usar en el trabajo. Por fin alguien que entiende exactamente lo que necesito.</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">M</div>
+          <div>
+            <div class="author-name">Marisela</div>
+            <div class="author-role">Profesional · Programa De Traducir a Fluir</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote-mark">"</div>
+        <div class="testimonial-text">Llevaba años "sabiendo" inglés pero no podía usarlo cuando lo necesitaba. Después de trabajar con Miyerick empecé a sostener reuniones completas sin preparar cada frase. Eso no había pasado nunca.</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">G</div>
+          <div>
+            <div class="author-name">Gustavo</div>
+            <div class="author-role">Ejecutivo · Programa De Traducir a Fluir</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-quote-mark">"</div>
+        <div class="testimonial-text">Lo que más me sorprendió fue darme cuenta de que el problema no era mi inglés — era lo que pensaba de mí mismo cuando intentaba hablar. Eso es lo que Miyerick trabaja diferente.</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">B</div>
+          <div>
+            <div class="author-name">Bryan</div>
+            <div class="author-role">Profesional · Programa De Traducir a Fluir</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHO -->
+<section class="forwho-section" id="para-quien">
+  <div class="section-inner">
+    <div class="section-tag" style="color:var(--gold)">¿Para quién es?</div>
+    <h2 class="section-title white" style="margin-bottom:50px">Este programa es <span class="gold">para ti</span> si...</h2>
+
+    <div class="forwho-grid">
+      <div class="forwho-col yes">
+        <h3>✅ SÍ es para ti</h3>
+        <div class="forwho-item">
+          <div class="forwho-icon">✅</div>
+          <div class="forwho-text">Ya tienes nivel B2 o C1 de inglés pero te bloqueas al hablar bajo presión real</div>
+        </div>
+        <div class="forwho-item">
+          <div class="forwho-icon">✅</div>
+          <div class="forwho-text">Usas inglés en tu trabajo — reuniones, llamadas, presentaciones, clientes internacionales</div>
+        </div>
+        <div class="forwho-item">
+          <div class="forwho-icon">✅</div>
+          <div class="forwho-text">Has invertido en cursos y apps sin obtener el resultado que necesitas en situaciones reales</div>
+        </div>
+        <div class="forwho-item">
+          <div class="forwho-icon">✅</div>
+          <div class="forwho-text">Puedes comprometer 2 sesiones por semana más 20-30 minutos de práctica diaria</div>
+        </div>
+        <div class="forwho-item">
+          <div class="forwho-icon">✅</div>
+          <div class="forwho-text">Quieres una solución personalizada, no otro curso genérico</div>
+        </div>
+        <div class="forwho-item">
+          <div class="forwho-icon">✅</div>
+          <div class="forwho-text">Estás dispuesto/a a invertir en un proceso real que tome el tiempo que necesita</div>
+        </div>
+      </div>
+
+      <div class="forwho-col no">
+        <h3>❌ NO es para ti</h3>
+        <div class="forwho-item">
+          <div class="forwho-icon">❌</div>
+          <div class="forwho-text">Estás buscando hablar inglés perfectamente en pocas semanas — eso no existe</div>
+        </div>
+        <div class="forwho-item">
+          <div class="forwho-icon">❌</div>
+          <div class="forwho-text">Eres principiante en inglés — el programa requiere una base sólida para trabajar</div>
+        </div>
+        <div class="forwho-item">
+          <div class="forwho-icon">❌</div>
+          <div class="forwho-text">No tienes el tiempo para las sesiones y la práctica entre ellas</div>
+        </div>
+        <div class="forwho-item">
+          <div class="forwho-icon">❌</div>
+          <div class="forwho-text">Buscas un curso grabado o un material al que acceder en cualquier momento sin compromiso</div>
+        </div>
+        <div class="forwho-item">
+          <div class="forwho-icon">❌</div>
+          <div class="forwho-text">No estás listo/a para hacer el trabajo real que requiere la transformación</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="price-section" id="inversion">
+  <div class="section-inner">
+    <div class="section-tag">La inversión</div>
+    <h2 class="section-title" style="text-align:center">Elige tu plan de <span class="gold">inversión</span></h2>
+    <p class="section-sub" style="text-align:center; margin:0 auto 60px">Mismo programa, mismos resultados, misma atención personalizada.</p>
+
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price-label">3 Cuotas Mensuales</div>
+        <div class="price-amount">$550</div>
+        <div class="price-period">USD / mes durante 3 meses</div>
+        <div class="price-note">Facilita la decisión. Mismo programa completo, mismos resultados. Total: $1,650 USD.</div>
+        <a href="https://forms.gle/FP8hs49qxK6xRaWd8" target="_blank" class="price-btn">Aplicar a este plan →</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-badge">Más elegido</div>
+        <div class="price-label">Pago único</div>
+        <div class="price-amount">$1,500</div>
+        <div class="price-period">USD pago único</div>
+        <div class="price-note">La inversión completa en una sola vez. Incluye las 32 sesiones + todos los materiales + plan de práctica post-programa.</div>
+        <a href="https://forms.gle/FP8hs49qxK6xRaWd8" target="_blank" class="price-btn">Aplicar a este plan →</a>
+      </div>
+    </div>
+
+    <div class="price-guarantee">
+      <p>⚠️ <strong>Antes de invertir:</strong> El proceso empieza con el <a href="https://forms.gle/FP8hs49qxK6xRaWd8" target="_blank" style="color:#065F46; font-weight:700;">formulario de precalificación</a> y una Sesión de Reconocimiento gratuita de 30 minutos. Antes de que haya dinero de por medio, los dos confirmaremos que hay fit real y que el programa es la solución correcta para ti. Si no hay fit, te lo digo con honestidad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="preguntas">
+  <div class="section-inner">
+    <div class="section-tag">Preguntas frecuentes</div>
+    <h2 class="section-title white" style="margin-bottom:50px">Lo que me <span class="gold">preguntan</span></h2>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-q">¿El programa funciona si vivo fuera de Venezuela?</div>
+        <div class="faq-a">Sí, 100%. El programa es completamente online por Zoom. Trabajo con profesionales en México, Colombia, Estados Unidos, España y toda Latinoamérica. Solo necesitas conexión a internet y disponibilidad en tu zona horaria.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Qué nivel de inglés necesito para entrar?</div>
+        <div class="faq-a">El programa está diseñado para personas con nivel B2 o C1 que ya tienen el inglés pero no pueden usarlo fluidamente bajo presión. Si eres principiante, este no es el programa correcto para ti en este momento.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Por qué 4 meses y no menos?</div>
+        <div class="faq-a">Porque tengo más de 20 años de experiencia y sé que la transformación real del inglés bajo presión necesita ese tiempo. Cualquier programa que te prometa resultados en 21 días no está siendo honesto contigo. Aquí trabajamos con la realidad, no con lo que quisieras escuchar.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Qué pasa si me comprometo y luego no puedo seguir?</div>
+        <div class="faq-a">Por eso existe el formulario de precalificación y la sesión de reconocimiento gratuita. Son los filtros que aseguran que solo empezamos cuando hay compromiso y fit real de los dos lados. La conversación honesta ocurre antes de invertir cualquier dinero.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Las sesiones son siempre a la misma hora?</div>
+        <div class="faq-a">Coordinamos los días y horarios según tu disponibilidad antes de empezar. Necesitamos 2 sesiones por semana de 60 minutos en horarios que funcionen para los dos. La flexibilidad se habla en la sesión de reconocimiento.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">¿Cómo sé si realmente voy a progresar?</div>
+        <div class="faq-a">Porque cada fase tiene un resultado medible y específico. Al final del mes 1 sabes exactamente qué cambió. Al final del mes 4 tienes una grabación comparativa de tu Día 1 vs tu Día 112. El progreso no se promete — se evidencia.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section" id="agenda">
+  <div class="section-tag" style="justify-content:center; margin-bottom:24px">
+    <span>El primer paso no tiene costo</span>
+  </div>
+  <h2 class="cta-title">
+    ¿Listo/a para dejar de
+    <span class="gold">congelarte en inglés?</span>
+  </h2>
+  <p class="cta-sub">El primer paso es completar el formulario de aplicación. Revisaré tus respuestas en 24 horas y si hay fit, te contactaré por WhatsApp para coordinar tu Sesión de Reconocimiento gratuita de 30 minutos.</p>
+
+  <!-- STEPS -->
+  <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:40px; max-width:700px; margin-left:auto; margin-right:auto;">
+    <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(201,168,76,0.3); border-radius:6px; padding:20px 24px; flex:1; min-width:180px; text-align:center;">
+      <div style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:var(--gold); line-height:1; margin-bottom:8px;">01</div>
+      <div style="font-size:13px; font-weight:700; color:var(--white); margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">Completas el formulario</div>
+      <div style="font-size:12px; color:rgba(255,255,255,0.5); line-height:1.5;">5 minutos · Totalmente gratis</div>
+    </div>
+    <div style="display:flex; align-items:center; color:var(--gold); font-size:24px; font-weight:700;">→</div>
+    <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(201,168,76,0.3); border-radius:6px; padding:20px 24px; flex:1; min-width:180px; text-align:center;">
+      <div style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:var(--gold); line-height:1; margin-bottom:8px;">02</div>
+      <div style="font-size:13px; font-weight:700; color:var(--white); margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">Reviso tus respuestas</div>
+      <div style="font-size:12px; color:rgba(255,255,255,0.5); line-height:1.5;">En 24 horas te contacto por WhatsApp</div>
+    </div>
+    <div style="display:flex; align-items:center; color:var(--gold); font-size:24px; font-weight:700;">→</div>
+    <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(201,168,76,0.3); border-radius:6px; padding:20px 24px; flex:1; min-width:180px; text-align:center;">
+      <div style="font-family:'Bebas Neue',sans-serif; font-size:36px; color:var(--gold); line-height:1; margin-bottom:8px;">03</div>
+      <div style="font-size:13px; font-weight:700; color:var(--white); margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">Sesión de Reconocimiento</div>
+      <div style="font-size:12px; color:rgba(255,255,255,0.5); line-height:1.5;">30 min · Gratis · Sin compromiso</div>
+    </div>
+  </div>
+
+  <a href="https://forms.gle/FP8hs49qxK6xRaWd8" target="_blank" class="cta-btn-large">Completar formulario de aplicación →</a>
+  <p class="cta-note">Gratuito · Sin compromiso · Te respondo en 24 horas</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Miyerick <span>Delgado</span></div>
+  <div class="footer-sub">Coach de Inglés Empresarial para Profesionales Latinos · Programa De Traducir a Fluir™</div>
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/miyerick-delgado" target="_blank">LinkedIn</a>
+    <a href="https://forms.gle/FP8hs49qxK6xRaWd8" target="_blank">Aplicar al programa</a>
+    <a href="#programa">El programa</a>
+    <a href="#inversion">Inversión</a>
+    <a href="#preguntas">Preguntas frecuentes</a>
+  </div>
+</footer>
+
+</body>
+</html>
